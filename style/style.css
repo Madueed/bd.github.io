@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #FFF2E3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    flex-grow: 1;
+}
+
+.form {
+    position: relative;
+    max-width: 320px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+.form__inner:before {
+    display: inline-block;
+    margin-top: -45px;
+    content: url(../img/form-flower.png);
+}
+
+.form__inner {
+    padding: 0 40px 10px;
+    margin-top: 45px;
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 0 6px 1px rgba(0, 0, 0, .1);
+}
+
+.form__inner h2 {
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.form__content {
+    position: relative;
+    margin: 30px -40px 0 -40px;
+    padding: 10px 40px 0 40px;
+    background: #FFF8F3;
+}
+.form__content:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    right: 0;
+    left: 0;
+    height: 2px;
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.form__content h3 {
+    font-family: 'Marck Script', cursive;
+    font-size: 22px;
+    color: #898989;
+    font-weight: normal;
+}
+
+.form__content input, .form__content select {
+    height: 38px;
+    line-height: 38px;
+    padding: 0 10px;
+    background: #ffffff;
+    border: 1px solid #DDDDDD;
+    font-size: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #808080;
+    outline: none;
+}
+
+.form__content input {
+    width: 100%;
+}
+.form__content input:focus, .form__content select:focus {
+    border-color: #C44D58;
+}
+
+.form__content input[type="submit"] {
+    margin: 20px 0;
+    padding: 0 10px;
+    background: #FF6B6B;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-width: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .2s linear
+}
+
+.form__content input[type="submit"]:hover {
+    background: #C44D58;
+}
+
+.form__message {
+    font-size: 12px;
+    color: green;
+}
+
+.form__error {
+    color: red;
+    font-size: 12px;
+}
